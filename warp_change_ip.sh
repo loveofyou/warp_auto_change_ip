@@ -33,7 +33,7 @@ do
             systemctl restart wg-quick@wgcf
             sleep 3
         else
-            echo -e "Region: ${region} Done, monitoring..."
+            echo -e "Region: ${region} Done, 地区正确,继续监控中..."
             sleep 6
         fi
 
