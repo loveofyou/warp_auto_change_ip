@@ -12,7 +12,7 @@ elif [[ "$input" == "y" ]];then
 fi
 while [[ "$input" == "y" ]]
 do
-    result=$(curl -6 --user-agent "${UA_Browser}" -fsL --write-out %{http_code} --output /dev/null --max-time 10 "https://www.netflix.com/title/81215567" 2>&1)
+    result=$(curl -6 --user-agent "${UA_Browser}" -fsL --write-out %{http_code} --output /dev/null --max-time 10 "https://www.netflix.com/title/81631701" 2>&1)
     if [[ "$result" == "404" ]];then
         echo -e "Originals Only, Changing IP..."
         systemctl restart wg-quick@wgcf
